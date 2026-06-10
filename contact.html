@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Excel Care Dawncrest Primary School</title>
+    <meta name="description" content="Get in touch with Excel Care Dawncrest Primary School. Visit us, call, email, or fill out our contact form. We'd love to hear from you.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50:'#f6f7f4',100:'#e8ebe3',200:'#d1d7c7',300:'#b3bea4',400:'#93a37f',500:'#6B8F63',600:'#4A6741',700:'#3a5233',800:'#2d4028',900:'#243320' },
+                        cream: '#FFF8F0',
+                        coral: '#E8734A',
+                        gold: '#D4A853',
+                        charcoal: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+    <!-- ========== NAV ========== -->
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-transparent transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-sage-500 to-sage-700 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>
+                    </div>
+                    <span class="font-heading text-xl font-bold text-charcoal tracking-tight">Dawncrest<span class="text-sage-600">Primary</span></span>
+                </a>
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="academics.html" class="nav-link">Academics</a>
+                    <a href="admissions.html" class="nav-link">Admissions</a>
+                    <a href="activities.html" class="nav-link">Activities</a>
+                    <a href="sports.html" class="nav-link">Sports</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="contact.html" class="contact-btn active-contact">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Toggle navigation">
+                    <div class="hamburger flex flex-col gap-1.5"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-sage-100">
+            <div class="px-6 py-4 space-y-1">
+                <a href="index.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Home</a>
+                <a href="about.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">About</a>
+                <a href="academics.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Academics</a>
+                <a href="admissions.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Admissions</a>
+                <a href="activities.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Activities</a>
+                <a href="sports.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Sports</a>
+                <a href="contact.html" class="inline-block mt-3 contact-btn active-contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+    <!-- ========== HERO ========== -->
+    <section class="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-sage-600 via-sage-700 to-sage-800">
+        <!-- Decorative shapes -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/5 blob"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-gold/10 blob float-d1"></div>
+        <div class="absolute top-20 right-[12%] w-20 h-20 border-4 border-white/10 rounded-full float hidden lg:block"></div>
+        <div class="absolute bottom-16 left-[10%] w-12 h-12 bg-sage-400/20 rounded-full float-d2 hidden lg:block"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+            <div class="reveal">
+                <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-6">
+                    Get in <span class="text-gold">Touch</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-white/60 leading-relaxed max-w-xl mx-auto">
+                    We'd love to hear from you. Whether you have a question, want to schedule a tour, or are ready to enrol — we're here to help.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT INFO CARDS ========== -->
+    <section class="py-24 lg:py-32 bg-white"
+    <!-- ========== SCHOOL IMAGE ========== -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="rounded-3xl overflow-hidden shadow-lg card-hover">
+                <img src="images/contact-school.jpg" alt="Dawncrest Primary School building" class="w-full h-[400px] object-cover">
+            </div>
+        </div>
+    </section>>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger">
+                <!-- Phone -->
+                <div class="reveal bg-cream rounded-2xl p-8 card-hover text-center border border-sage-100/40">
+                    <div class="w-14 h-14 bg-sage-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">Phone</h3>
+                    <p class="text-charcoal/55 text-sm">032 533 4819</p>
+                </div>
+                <!-- Email -->
+                <div class="reveal bg-cream rounded-2xl p-8 card-hover text-center border border-sage-100/40">
+                    <div class="w-14 h-14 bg-coral/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-coral" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">Email</h3>
+                    <p class="text-charcoal/55 text-sm">dawncrestprimary@gmail.com</p>
+                </div>
+                <!-- Address -->
+                <div class="reveal bg-cream rounded-2xl p-8 card-hover text-center border border-sage-100/40">
+                    <div class="w-14 h-14 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">Address</h3>
+                    <p class="text-charcoal/55 text-sm">123 Learning Lane,<br>Greenville</p>
+                </div>
+                <!-- Office Hours -->
+                <div class="reveal bg-cream rounded-2xl p-8 card-hover text-center border border-sage-100/40">
+                    <div class="w-14 h-14 bg-sage-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-lg font-bold mb-2">Office Hours</h3>
+                    <p class="text-charcoal/55 text-sm">Mon–Fri: 7 AM – 6 PM<br>Sat: 8 AM – 12 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT FORM + MAP ========== -->
+    <section class="py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 dots-pattern opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <div class="section-bar mx-auto mb-5"></div>
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-5">Send Us a Message</h2>
+                <p class="text-charcoal/50 text-lg max-w-2xl mx-auto">Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Left: Form -->
+                <div class="reveal-left">
+                    <form id="contact-form" class="space-y-5">
+                        <div>
+                            <label for="parent-name" class="block text-sm font-medium text-charcoal mb-2">Parent Name <span class="text-coral">*</span></label>
+                            <input type="text" id="parent-name" name="parent-name" required placeholder="Your full name" class="form-input">
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-charcoal mb-2">Email <span class="text-coral">*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com" class="form-input">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-charcoal mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" class="form-input">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="child-name" class="block text-sm font-medium text-charcoal mb-2">Child's Name</label>
+                                <input type="text" id="child-name" name="child-name" placeholder="Child's first name" class="form-input">
+                            </div>
+                            <div>
+                                <label for="child-age" class="block text-sm font-medium text-charcoal mb-2">Child's Age</label>
+                                <select id="child-age" name="child-age" class="form-input">
+                                    <option value="" disabled selected>Select age range</option>
+                                    <option value="2-3">2–3 years</option>
+                                    <option value="3-4">3–4 years</option>
+                                    <option value="4-5">4–5 years</option>
+                                    <option value="5-6">5–6 years</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-charcoal mb-2">Message <span class="text-coral">*</span></label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us how we can help…" class="form-input resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="group inline-flex items-center gap-2.5 px-8 py-4 bg-sage-600 text-white rounded-full font-semibold text-[0.9375rem] hover:bg-sage-700 transition-all duration-300 shadow-lg shadow-sage-600/20 hover:shadow-xl hover:shadow-sage-600/30 hover:-translate-y-0.5 w-full sm:w-auto justify-center">
+                            Send Message
+                            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Map Placeholder + Social -->
+                <div class="reveal-right space-y-8">
+                    <!-- Map Placeholder -->
+                    <div class="relative bg-sage-100 rounded-3xl h-80 lg:h-96 overflow-hidden flex flex-col items-center justify-center">
+                        <div class="absolute inset-0 dots-pattern opacity-30"></div>
+                        <div class="relative z-10 text-center">
+                            <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                <svg class="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                            </div>
+                            <p class="font-heading text-lg font-bold text-charcoal mb-1">123 Learning Lane</p>
+                            <p class="text-charcoal/50 text-sm">Greenville</p>
+                        </div>
+                        <!-- Decorative rings -->
+                        <div class="absolute w-48 h-48 border-2 border-sage-300/20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                        <div class="absolute w-72 h-72 border-2 border-sage-300/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="bg-white rounded-2xl p-6 border border-sage-100/60">
+                        <h3 class="font-heading text-lg font-bold mb-4">Follow Us</h3>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center hover:bg-sage-100 transition-colors group" aria-label="Facebook">
+                                <svg class="w-5 h-5 text-charcoal/40 group-hover:text-sage-600 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center hover:bg-sage-100 transition-colors group" aria-label="Instagram">
+                                <svg class="w-5 h-5 text-charcoal/40 group-hover:text-coral transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-xl bg-sage-50 flex items-center justify-center hover:bg-sage-100 transition-colors group" aria-label="X">
+                                <svg class="w-5 h-5 text-charcoal/40 group-hover:text-charcoal transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OFFICE HOURS DETAIL ========== -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <div class="section-bar mx-auto mb-5"></div>
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-5">Office Hours</h2>
+                <p class="text-charcoal/50 text-lg max-w-2xl mx-auto">Our admin team is available during the following hours.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <!-- Weekdays -->
+                <div class="reveal-left bg-sage-50/50 rounded-2xl p-8 border border-sage-100/40">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold">Weekdays</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between py-2 border-b border-sage-100/60">
+                            <span class="text-charcoal/55">Monday</span>
+                            <span class="font-medium">7:00 AM – 3:30 PM</span>
+                        </li>
+                        <li class="flex justify-between py-2 border-b border-sage-100/60">
+                            <span class="text-charcoal/55">Tuesday</span>
+                            <span class="font-medium">7:00 AM – 3:30 PM</span>
+                        </li>
+                        <li class="flex justify-between py-2 border-b border-sage-100/60">
+                            <span class="text-charcoal/55">Wednesday</span>
+                            <span class="font-medium">7:00 AM – 3:30 PM</span>
+                        </li>
+                        <li class="flex justify-between py-2 border-b border-sage-100/60">
+                            <span class="text-charcoal/55">Thursday</span>
+                            <span class="font-medium">7:00 AM – 3:30 PM</span>
+                        </li>
+                        <li class="flex justify-between py-2">
+                            <span class="text-charcoal/55">Friday</span>
+                            <span class="font-medium">7:00 AM – 3:30 PM</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Weekends -->
+                <div class="reveal-right bg-sage-50/50 rounded-2xl p-8 border border-sage-100/40">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold">Weekends</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between py-2 border-b border-sage-100/60">
+                            <span class="text-charcoal/55">Saturday</span>
+                            <span class="font-medium">Monday – Friday (School Hours)</span>
+                        </li>
+                        <li class="flex justify-between py-2">
+                            <span class="text-charcoal/55">Sunday</span>
+                            <span class="font-medium text-charcoal/40">Closed</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8 p-4 bg-gold/5 rounded-xl border border-gold/15">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
+                            <p class="text-charcoal/55 text-sm leading-relaxed">
+                                <strong class="text-charcoal font-medium">School Holidays:</strong> Office hours may vary during school holidays and public holidays. Please call ahead to confirm availability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ MINI SECTION ========== -->
+    <section class="py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 dots-pattern opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12 reveal">
+                    <div class="section-bar mx-auto mb-5"></div>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-5">Quick Questions</h2>
+                    <p class="text-charcoal/50 text-lg">Common questions about getting in touch with us.</p>
+                </div>
+
+                <div class="faq-list space-y-4 reveal">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-white rounded-2xl border border-sage-100/60 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left group">
+                            <span class="font-heading text-lg font-semibold text-charcoal pr-4">How quickly do you respond to enquiries?</span>
+                            <span class="faq-icon w-8 h-8 bg-sage-50 rounded-full flex items-center justify-center shrink-0 group-hover:bg-sage-100 transition-colors">
+                                <svg class="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="px-8 pb-6">
+                                <p class="text-charcoal/55 leading-relaxed">We aim to respond to all emails and form submissions within 24 hours during business days. For urgent matters, we recommend calling us directly at 032 533 4819 during office hours for an immediate response.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-white rounded-2xl border border-sage-100/60 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left group">
+                            <span class="font-heading text-lg font-semibold text-charcoal pr-4">Can I schedule a tour online?</span>
+                            <span class="faq-icon w-8 h-8 bg-sage-50 rounded-full flex items-center justify-center shrink-0 group-hover:bg-sage-100 transition-colors">
+                                <svg class="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="px-8 pb-6">
+                                <p class="text-charcoal/55 leading-relaxed">Absolutely! Simply fill out the contact form above and mention that you'd like to schedule a campus tour. Our admissions team will reach out with available dates and times. Tours are typically available Monday through Friday between 9:00 AM and 3:00 PM.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-white rounded-2xl border border-sage-100/60 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left group">
+                            <span class="font-heading text-lg font-semibold text-charcoal pr-4">Do you offer virtual tours?</span>
+                            <span class="faq-icon w-8 h-8 bg-sage-50 rounded-full flex items-center justify-center shrink-0 group-hover:bg-sage-100 transition-colors">
+                                <svg class="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                            </span>
+                        </button>
+                        <div class="faq-content">
+                            <div class="px-8 pb-6">
+                                <p class="text-charcoal/55 leading-relaxed">Yes, we do! For families who can't visit in person, we offer guided virtual tours via video call. These are hosted by our admissions coordinator and give you a comprehensive look at our classrooms, outdoor spaces, and facilities. Contact us to book a time that works for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-charcoal text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-sage-500 to-sage-700 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>
+                        </div>
+                        <span class="font-heading text-xl font-bold tracking-tight">Dawncrest<span class="text-sage-400">Primary</span></span>
+                    </div>
+                    <p class="text-white/50 text-sm leading-relaxed">A vibrant public primary school in Verulam, KwaZulu-Natal, providing quality education under the Pinetown Education District since establishment.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-white/50 hover:text-white text-sm transition-colors">About Us</a></li>
+                        <li><a href="academics.html" class="text-white/50 hover:text-white text-sm transition-colors">Academics</a></li>
+                        <li><a href="admissions.html" class="text-white/50 hover:text-white text-sm transition-colors">Admissions</a></li>
+                        <li><a href="activities.html" class="text-white/50 hover:text-white text-sm transition-colors">Activities</a></li>
+                        <li><a href="sports.html" class="text-white/50 hover:text-white text-sm transition-colors">Sports</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm text-white/50">
+                        <li class="flex items-start gap-2.5">
+                            <svg class="w-4 h-4 mt-0.5 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                            42 Robin Street, Dawncrest, Verulam, 4340
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+                            032 533 4819
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+                            dawncrestprimary@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Hours</h4>
+                    <ul class="space-y-3 text-sm text-white/50">
+                        <li>Monday – Friday</li>
+                        <li class="text-white font-medium">7:00 AM – 3:30 PM</li>
+                        <li class="mt-4">Saturday</li>
+                        <li class="text-white font-medium">Monday – Friday (School Hours)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-sm">&copy; 2026 Excel Care Dawncrest Primary School. All rights reserved.</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="Facebook">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="Instagram">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="X">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

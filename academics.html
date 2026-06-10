@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics — Excel Care Dawncrest Primary School</title>
+    <meta name="description" content="Explore our play-based curriculum for ages 2-6, including our unique learning philosophy, age-group programs, and daily schedule.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50:'#f6f7f4',100:'#e8ebe3',200:'#d1d7c7',300:'#b3bea4',400:'#93a37f',500:'#6B8F63',600:'#4A6741',700:'#3a5233',800:'#2d4028',900:'#243320' },
+                        cream: '#FFF8F0',
+                        coral: '#E8734A',
+                        gold: '#D4A853',
+                        charcoal: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-body bg-cream text-charcoal">
+
+    <!-- ========== NAV ========== -->
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-transparent transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-sage-500 to-sage-700 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>
+                    </div>
+                    <span class="font-heading text-xl font-bold text-charcoal tracking-tight">Dawncrest<span class="text-sage-600">Primary</span></span>
+                </a>
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="academics.html" class="nav-link active">Academics</a>
+                    <a href="admissions.html" class="nav-link">Admissions</a>
+                    <a href="activities.html" class="nav-link">Activities</a>
+                    <a href="sports.html" class="nav-link">Sports</a>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="contact.html" class="contact-btn">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Toggle navigation">
+                    <div class="hamburger flex flex-col gap-1.5"><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-sage-100">
+            <div class="px-6 py-4 space-y-1">
+                <a href="index.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Home</a>
+                <a href="about.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">About</a>
+                <a href="academics.html" class="block py-3 text-sage-700 font-medium">Academics</a>
+                <a href="admissions.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Admissions</a>
+                <a href="activities.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Activities</a>
+                <a href="sports.html" class="block py-3 text-charcoal/70 hover:text-sage-600 transition-colors">Sports</a>
+                <a href="contact.html" class="inline-block mt-3 contact-btn">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20"></div>
+
+    <!-- ========== HERO ========== -->
+    <section class="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-br from-sage-50 via-cream to-sage-100">
+        <!-- Decorative shapes -->
+        <div class="absolute top-8 right-[5%] w-80 h-80 bg-sage-200/30 blob float hidden md:block"></div>
+        <div class="absolute bottom-12 left-[3%] w-60 h-60 bg-coral/10 blob float-d1 hidden md:block"></div>
+        <div class="absolute top-40 left-[30%] w-14 h-14 bg-gold/20 rounded-full float-d2 hidden lg:block"></div>
+        <div class="absolute bottom-28 right-[20%] w-10 h-10 bg-sage-400/25 rounded-full float hidden lg:block"></div>
+        <!-- Dots -->
+        <div class="absolute inset-0 dots-pattern opacity-20"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl reveal">
+                <nav class="flex items-center gap-2 text-sm text-charcoal/40 mb-8">
+                    <a href="index.html" class="hover:text-sage-600 transition-colors">Home</a>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+                    <span class="text-sage-600 font-medium">Academics</span>
+                </nav>
+                <h1 class="font-heading text-5xl sm:text-6xl lg:text-7xl font-extrabold text-charcoal leading-[1.05] mb-6">
+                    <span class="gradient-text">Academics</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-charcoal/55 leading-relaxed max-w-xl">
+                    A thoughtfully designed curriculum that sparks wonder, builds confidence, and lays strong foundations for lifelong learning.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR PHILOSOPHY ========== -->
+    <section class="py-24 lg:py-32 bg-white"
+    <!-- ========== PHASE IMAGE ========== -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="images/academics-study.jpg" alt="Foundation Phase learning at Dawncrest Primary" class="w-full h-[350px] object-cover">
+                </div>
+                <div>
+                    <div class="section-bar mb-5"></div>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-4">Learning at Dawncrest</h2>
+                    <p class="text-charcoal/55 leading-relaxed">Our learners engage with the CAPS curriculum in well-equipped classrooms with modern teaching resources. From Foundation Phase literacy and numeracy to Senior Phase sciences and technology, every lesson is designed to inspire curiosity and achievement.</p>
+                </div>
+            </div>
+        </div>
+    </section>>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-5 gap-16 lg:gap-20 items-center">
+                <!-- Left: Heading & text (3 cols) -->
+                <div class="lg:col-span-3 reveal-left">
+                    <div class="section-bar mb-5"></div>
+                    <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-6 leading-tight">Learning Through<br><span class="gradient-text">Wonder</span></h2>
+                    <p class="text-charcoal/55 leading-relaxed mb-6 text-lg">
+                        Our curriculum is inspired by the Reggio Emilia approach — a philosophy that views children as capable, resourceful learners who construct knowledge through exploration and meaningful relationships.
+                    </p>
+                    <p class="text-charcoal/55 leading-relaxed mb-6">
+                        Rather than rigid lesson plans, our teachers follow the children's interests, weaving academic foundations into projects that emerge organically. Nature, art, and conversation are the primary tools; wonder is the driving force.
+                    </p>
+                    <p class="text-charcoal/55 leading-relaxed">
+                        Every classroom is designed as a "third teacher" — an environment rich with provocations, natural materials, and open-ended possibilities that invite inquiry and imaginative thinking.
+                    </p>
+                </div>
+
+                <!-- Right: Stacked mini-cards (2 cols) -->
+                <div class="lg:col-span-2 space-y-5 reveal-right">
+                    <!-- Child-Led Exploration -->
+                    <div class="bg-sage-50 rounded-2xl p-6 card-hover border border-sage-100/60">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">Child-Led Exploration</h4>
+                                <p class="text-charcoal/50 text-sm leading-relaxed">Children choose their learning path while teachers gently guide, scaffold, and document their discoveries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nature Integration -->
+                    <div class="bg-coral/5 rounded-2xl p-6 card-hover border border-coral/10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-coral/10 rounded-xl flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-coral" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 1 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m-3.414 1.068A9 9 0 0 1 3.75 15.75"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">Nature Integration</h4>
+                                <p class="text-charcoal/50 text-sm leading-relaxed">Our sensory gardens, outdoor classrooms, and nature walks connect children to the living world every day.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Creative Expression -->
+                    <div class="bg-gold/5 rounded-2xl p-6 card-hover border border-gold/15">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center shrink-0">
+                                <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">Creative Expression</h4>
+                                <p class="text-charcoal/50 text-sm leading-relaxed">Art, music, drama, and storytelling are woven into every day, cultivating the hundred languages of children.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== AGE GROUP PROGRAMS ========== -->
+    <section class="py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 dots-pattern opacity-20"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <div class="section-bar mx-auto mb-5"></div>
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-5">Our Phases</h2>
+                <p class="text-charcoal/50 text-lg max-w-2xl mx-auto">Three thoughtfully designed pathways, each tailored to a child's developmental stage.</p>
+            </div>
+
+            <!-- ─── LITTLE SPROUTS (2-3) ─── -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24 lg:mb-32">
+                <!-- Left: Content -->
+                <div class="reveal-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="inline-block px-4 py-1.5 bg-sage-100 text-sage-700 rounded-full text-xs font-semibold uppercase tracking-wider">Grades R–3</span>
+                    </div>
+                    <h3 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-5">Foundation Phase</h3>
+                    <p class="text-charcoal/55 leading-relaxed mb-6">
+                        Our youngest learners thrive in a warm, home-like environment designed for sensory-rich exploration. Through gentle routines and hands-on discovery, toddlers build the language, motor, and social skills that form the bedrock of all future learning.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Sensory play stations with natural materials</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Early language through songs, rhymes & storytelling</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Fine & gross motor skill development</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-sage-100 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-sage-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Gentle social skill building & emotional regulation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Sample Schedule Card -->
+                <div class="reveal-right">
+                    <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-sage-100/60 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-sage-100/40 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                        <h4 class="font-heading text-lg font-bold mb-6 text-sage-700 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                            Sample Day — Sprouts
+                        </h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">7:30</span><span class="text-charcoal/60">Welcome & Free Play</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">8:00</span><span class="text-charcoal/60">Morning Circle — Songs & Greetings</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">8:30</span><span class="text-charcoal/60">Sensory Exploration Stations</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">9:30</span><span class="text-charcoal/60">Outdoor Garden Play</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">10:00</span><span class="text-charcoal/60">Healthy Snack Time</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">10:30</span><span class="text-charcoal/60">Creative Art & Music</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">11:30</span><span class="text-charcoal/60">Storytime & Lullabies</span></div>
+                            <div class="flex items-center gap-4"><span class="text-sage-600 font-semibold w-16 shrink-0">12:00</span><span class="text-charcoal/60">Lunch & Nap Time</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── CURIOUS MINDS (3-4) ─── -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24 lg:mb-32">
+                <!-- Left: Key Skills (reversed order on desktop) -->
+                <div class="reveal-left lg:order-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="inline-block px-4 py-1.5 bg-coral/15 text-coral rounded-full text-xs font-semibold uppercase tracking-wider">Grades 4–7</span>
+                    </div>
+                    <h3 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-5">Senior Phase</h3>
+                    <p class="text-charcoal/55 leading-relaxed mb-6">
+                        Building on the sensory foundations, our Senior Phase programme introduces early literacy, numeracy, and collaborative project-based learning. Children begin to ask deeper questions and work together to find answers.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Phonics awareness & early reading</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Number concepts, patterns & sorting</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Collaborative group projects & presentations</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-coral/10 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-coral" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Science observation & nature journaling</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Key Skills Graphic Card -->
+                <div class="reveal-right lg:order-1">
+                    <div class="bg-gradient-to-br from-coral/5 to-coral/10 rounded-3xl p-8 lg:p-10 border border-coral/10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-coral/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                        <h4 class="font-heading text-lg font-bold mb-6 text-coral flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                            Key Skills Developed
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded-xl p-4 text-center">
+                                <div class="font-heading text-2xl font-bold text-coral mb-1">26</div>
+                                <p class="text-charcoal/50 text-xs font-medium">Letter Sounds</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center">
+                                <div class="font-heading text-2xl font-bold text-coral mb-1">20+</div>
+                                <p class="text-charcoal/50 text-xs font-medium">Number Concepts</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center">
+                                <div class="font-heading text-2xl font-bold text-coral mb-1">4</div>
+                                <p class="text-charcoal/50 text-xs font-medium">Group Projects / Term</p>
+                            </div>
+                            <div class="bg-white rounded-xl p-4 text-center">
+                                <div class="font-heading text-2xl font-bold text-coral mb-1">Daily</div>
+                                <p class="text-charcoal/50 text-xs font-medium">Creative Arts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ─── YOUNG EXPLORERS (5-6) ─── -->
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left: Content -->
+                <div class="reveal-left">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="inline-block px-4 py-1.5 bg-gold/15 text-yellow-700 rounded-full text-xs font-semibold uppercase tracking-wider">Grades R–7</span>
+                    </div>
+                    <h3 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-5">Life Skills & Sport</h3>
+                    <p class="text-charcoal/55 leading-relaxed mb-6">
+                        Our flagship programme prepares children for the transition to primary school with confidence and excitement. Through STEM challenges, literacy workshops, and leadership opportunities, children develop the academic and social skills they need to thrive.
+                    </p>
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-gold/15 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Independent reading & early writing</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-gold/15 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Addition, subtraction & critical thinking</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-gold/15 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">Leadership roles & classroom responsibilities</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 bg-gold/15 rounded-full flex items-center justify-center shrink-0"><svg class="w-3.5 h-3.5 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg></div>
+                            <span class="text-charcoal/60 text-sm">STEM experiments & coding foundations</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Curriculum Highlights -->
+                <div class="reveal-right">
+                    <div class="bg-gradient-to-br from-gold/5 to-gold/10 rounded-3xl p-8 lg:p-10 border border-gold/15 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gold/15 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                        <h4 class="font-heading text-lg font-bold mb-6 text-yellow-700 flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+                            Curriculum Highlights
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+                                <div class="w-8 h-8 bg-gold/15 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm mb-0.5">Literacy Workshop</p>
+                                    <p class="text-charcoal/50 text-xs">Guided reading groups, journal writing, and author studies</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+                                <div class="w-8 h-8 bg-gold/15 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm mb-0.5">Math Discovery</p>
+                                    <p class="text-charcoal/50 text-xs">Hands-on manipulatives, real-world math, and logic puzzles</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-white rounded-xl p-4">
+                                <div class="w-8 h-8 bg-gold/15 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+                                    <svg class="w-4 h-4 text-yellow-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-sm mb-0.5">STEM Lab</p>
+                                    <p class="text-charcoal/50 text-xs">Weekly experiments, coding with Bee-Bots, and engineering challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SENIOR PHASE IMAGE ========== -->
+    <section class="py-16 bg-sage-50/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="section-bar mb-5"></div>
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-charcoal mb-4">Senior Phase</h2>
+                    <p class="text-charcoal/55 leading-relaxed">In Grades 4 to 7, learners tackle more complex subjects including Mathematics, Natural Sciences, Technology, Social Sciences, and Creative Arts. Our dedicated educators ensure every learner is prepared for the transition to high school.</p>
+                </div>
+                <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-lg card-hover">
+                    <img src="images/academics-books.jpg" alt="Senior Phase learning at Dawncrest Primary" class="w-full h-[350px] object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DAILY SCHEDULE ========== -->
+    <section class="py-24 lg:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <div class="section-bar mx-auto mb-5"></div>
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-5">A Day at Dawncrest Primary</h2>
+                <p class="text-charcoal/50 text-lg max-w-2xl mx-auto">Every day is thoughtfully structured to balance learning, play, rest, and creativity.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto reveal">
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-[39px] top-0 bottom-0 w-px bg-gradient-to-b from-sage-200 via-sage-300 to-sage-200 hidden sm:block"></div>
+
+                    <div class="space-y-1">
+                        <!-- 7:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-500 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-sage-50 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-100/60 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">7:00 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Arrival</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Welcome & free-choice activities</p>
+                            </div>
+                        </div>
+                        <!-- 7:30 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-400 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-cream rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-50 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">7:30 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Community</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Morning circle — greetings, songs & calendar</p>
+                            </div>
+                        </div>
+                        <!-- 8:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-500 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-sage-50 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-100/60 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">8:00 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Learning</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Learning centres — literacy, math & science</p>
+                            </div>
+                        </div>
+                        <!-- 9:30 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-coral border-4 border-coral/20 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-coral/5 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-coral/10 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-coral text-sm">9:30 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Outdoor</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Outdoor play & nature exploration</p>
+                            </div>
+                        </div>
+                        <!-- 10:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-gold border-4 border-gold/20 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-gold/5 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-gold/10 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-yellow-700 text-sm">10:00 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Nutrition</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Healthy snack time</p>
+                            </div>
+                        </div>
+                        <!-- 10:30 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-500 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-sage-50 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-100/60 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">10:30 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Creative</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Creative arts — painting, sculpture & crafts</p>
+                            </div>
+                        </div>
+                        <!-- 11:30 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-400 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-cream rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-50 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">11:30 AM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Stories</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Story time & music</p>
+                            </div>
+                        </div>
+                        <!-- 12:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-gold border-4 border-gold/20 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-gold/5 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-gold/10 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-yellow-700 text-sm">12:00 PM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Nutrition</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Lunch</p>
+                            </div>
+                        </div>
+                        <!-- 12:30 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-300 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-sage-50 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-100/60 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">12:30 PM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Rest</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Quiet rest & nap time</p>
+                            </div>
+                        </div>
+                        <!-- 2:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-500 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-cream rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-50 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">2:00 PM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Enrichment</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Afternoon enrichment activities</p>
+                            </div>
+                        </div>
+                        <!-- 3:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-coral border-4 border-coral/20 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-coral/5 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-coral/10 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-coral text-sm">3:00 PM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Play</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Free play & outdoor exploration</p>
+                            </div>
+                        </div>
+                        <!-- 4:00-6:00 -->
+                        <div class="flex items-start gap-5 sm:gap-8 group">
+                            <div class="flex flex-col items-center shrink-0">
+                                <div class="w-[22px] h-[22px] rounded-full bg-sage-300 border-4 border-sage-100 relative z-10 group-hover:scale-110 transition-transform"></div>
+                            </div>
+                            <div class="bg-sage-50 rounded-xl px-5 py-3.5 flex-1 mb-2 group-hover:bg-sage-100/60 transition-colors">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-heading font-bold text-sage-700 text-sm">4:00 – 6:00 PM</span>
+                                    <span class="text-charcoal/40 text-xs font-medium uppercase tracking-wider">Extended Care</span>
+                                </div>
+                                <p class="text-charcoal/55 text-sm mt-1">Extended care with quiet games, reading & pickup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENRICHMENT PROGRAMS ========== -->
+    <section class="py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 dots-pattern opacity-25"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <div class="section-bar mx-auto mb-5"></div>
+                <h2 class="font-heading text-3xl lg:text-5xl font-bold text-charcoal mb-5">Enrichment Programs</h2>
+                <p class="text-charcoal/50 text-lg max-w-2xl mx-auto">Integrated into the curriculum — not add-ons — these programmes deepen every child's experience.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 stagger">
+                <!-- STEM Lab -->
+                <div class="reveal bg-white rounded-2xl p-8 card-hover border border-sage-100/60 text-center">
+                    <div class="w-14 h-14 bg-sage-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3">STEM Lab</h3>
+                    <p class="text-charcoal/55 text-sm leading-relaxed">Weekly experiments, robotics basics, and engineering challenges spark scientific curiosity from the very start.</p>
+                </div>
+                <!-- Music -->
+                <div class="reveal bg-white rounded-2xl p-8 card-hover border border-coral/10 text-center">
+                    <div class="w-14 h-14 bg-coral/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-7 h-7 text-coral" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3">Music</h3>
+                    <p class="text-charcoal/55 text-sm leading-relaxed">Rhythm, percussion, singing, and creative dance develop coordination, expression, and an early love of the arts.</p>
+                </div>
+                <!-- Foreign Language -->
+                <div class="reveal bg-white rounded-2xl p-8 card-hover border border-gold/15 text-center">
+                    <div class="w-14 h-14 bg-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364V3M3 11.25h4.5m0 0a13.789 13.789 0 0 1-.87 4.876A13.856 13.856 0 0 0 12 15.75m-4.5-4.5H12m0 0a13.934 13.934 0 0 1 5.508 2.504"/></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3">Foreign Language</h3>
+                    <p class="text-charcoal/55 text-sm leading-relaxed">Immersive French and Mandarin sessions through stories, games, and songs build multilingual foundations naturally.</p>
+                </div>
+                <!-- Mindfulness & Yoga -->
+                <div class="reveal bg-white rounded-2xl p-8 card-hover border border-sage-100/60 text-center">
+                    <div class="w-14 h-14 bg-sage-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3">Mindfulness & Yoga</h3>
+                    <p class="text-charcoal/55 text-sm leading-relaxed">Breathing exercises, guided meditation, and child-friendly yoga build emotional resilience and self-awareness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="py-24 lg:py-32 bg-gradient-to-br from-sage-600 via-sage-700 to-sage-800 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-white/5 blob"></div>
+        <div class="absolute bottom-0 right-0 w-72 h-72 bg-gold/10 blob float-d1"></div>
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10 reveal">
+            <h2 class="font-heading text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight">Ready to<br>Enrol?</h2>
+            <p class="text-white/70 text-lg max-w-xl mx-auto mb-10">Give your child the gift of a curriculum designed around wonder, connection, and joyful learning.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="admissions.html" class="inline-flex items-center gap-2.5 px-8 py-4 bg-white text-sage-700 rounded-full font-bold hover:bg-cream transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    Apply Now
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 bg-transparent text-white rounded-full font-semibold border-2 border-white/30 hover:border-white/60 transition-all">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-charcoal text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-br from-sage-500 to-sage-700 rounded-xl flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/></svg>
+                        </div>
+                        <span class="font-heading text-xl font-bold tracking-tight">Dawncrest<span class="text-sage-400">Primary</span></span>
+                    </div>
+                    <p class="text-white/50 text-sm leading-relaxed">A vibrant public primary school in Verulam, KwaZulu-Natal, providing quality education under the Pinetown Education District since establishment.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-white/50 hover:text-white text-sm transition-colors">About Us</a></li>
+                        <li><a href="academics.html" class="text-white/50 hover:text-white text-sm transition-colors">Academics</a></li>
+                        <li><a href="admissions.html" class="text-white/50 hover:text-white text-sm transition-colors">Admissions</a></li>
+                        <li><a href="activities.html" class="text-white/50 hover:text-white text-sm transition-colors">Activities</a></li>
+                        <li><a href="sports.html" class="text-white/50 hover:text-white text-sm transition-colors">Sports</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm text-white/50">
+                        <li class="flex items-start gap-2.5">
+                            <svg class="w-4 h-4 mt-0.5 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                            42 Robin Street, Dawncrest, Verulam, 4340
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+                            032 533 4819
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <svg class="w-4 h-4 text-sage-400 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+                            dawncrestprimary@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-semibold text-xs uppercase tracking-widest text-sage-400 mb-6">Hours</h4>
+                    <ul class="space-y-3 text-sm text-white/50">
+                        <li>Monday – Friday</li>
+                        <li class="text-white font-medium">7:00 AM – 3:30 PM</li>
+                        <li class="mt-4">Saturday</li>
+                        <li class="text-white font-medium">Monday – Friday (School Hours)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-white/30 text-sm">&copy; 2026 Excel Care Dawncrest Primary School. All rights reserved.</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="Facebook">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="Instagram">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-white/8 flex items-center justify-center hover:bg-sage-600 transition-colors" aria-label="X">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

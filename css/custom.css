@@ -1,0 +1,308 @@
+/* ========================================
+   Excel Care Dawncrest Primary School — Custom CSS
+   Extends Tailwind CDN with bespoke styles
+   ======================================== */
+
+/* --- Base --- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #2D2D2D;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(107, 143, 99, 0.2);
+  color: #2D2D2D;
+}
+
+/* --- Navigation --- */
+.nav-link {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #777;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4A6741;
+}
+
+.nav-link.active {
+  color: #2D2D2D;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 1rem;
+  right: 1rem;
+  height: 2.5px;
+  background: #4A6741;
+  border-radius: 2px;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1.75rem;
+  background: linear-gradient(135deg, #4A6741, #3a5233);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 10px rgba(74, 103, 65, 0.25);
+}
+
+.contact-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(74, 103, 65, 0.35);
+}
+
+.contact-btn.active-contact {
+  background: linear-gradient(135deg, #3a5233, #2d4028);
+  box-shadow: 0 2px 10px rgba(74, 103, 65, 0.4);
+}
+
+.nav-scrolled {
+  border-color: rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 1px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Mobile Menu --- */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu.open {
+  max-height: 450px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #2D2D2D;
+  border-radius: 2px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hamburger span:nth-child(2) {
+  width: 18px;
+}
+
+.hamburger.active span:first-child {
+  transform: rotate(45deg) translate(4px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-8px);
+}
+
+.hamburger.active span:last-child {
+  transform: rotate(-45deg) translate(4px, -5px);
+}
+
+/* --- Scroll Reveal Animations --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger children */
+.stagger > * {
+  transition-delay: calc(var(--i, 0) * 120ms);
+}
+
+/* --- Organic Blob Shape --- */
+.blob {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: blob-morph 10s ease-in-out infinite;
+}
+
+@keyframes blob-morph {
+  0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  25%      { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+  50%      { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+  75%      { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+
+/* --- Float Animations --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+.float       { animation: float 4s ease-in-out infinite; }
+.float-d1    { animation: float 4s ease-in-out infinite 1s; }
+.float-d2    { animation: float 4s ease-in-out infinite 2s; }
+
+/* --- Gradient Text --- */
+.gradient-text {
+  background: linear-gradient(135deg, #4A6741 0%, #6B8F63 40%, #D4A853 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* --- Card Hover --- */
+.card-hover {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Image Zoom on Hover --- */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.06);
+}
+
+/* --- FAQ Accordion --- */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-icon {
+  transition: transform 0.35s;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* --- Form Inputs --- */
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  background: white;
+  border: 1.5px solid #e8ebe3;
+  border-radius: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  color: #2D2D2D;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #6B8F63;
+  box-shadow: 0 0 0 4px rgba(107, 143, 99, 0.12);
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+.form-input.error {
+  border-color: #E8734A;
+  box-shadow: 0 0 0 4px rgba(232, 115, 74, 0.1);
+}
+
+/* --- Decorative Dots Pattern --- */
+.dots-pattern {
+  background-image: radial-gradient(#d1d7c7 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* --- Pulse --- */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.5; }
+  50%      { opacity: 1; }
+}
+
+.pulse-soft {
+  animation: pulse-soft 2.5s ease-in-out infinite;
+}
+
+/* --- Counter --- */
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- Section Heading Bar --- */
+.section-bar {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, #4A6741, #D4A853);
+  border-radius: 2px;
+}
+
+/* --- Hero pattern overlay --- */
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(107, 143, 99, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(212, 168, 83, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(232, 115, 74, 0.03) 0%, transparent 70%);
+}
